@@ -1,3 +1,28 @@
-.classeteste{
-  background: red;
+@mixin phone{
+  @media(max-width:320px){@content}
+}
+@mixin tablet{
+  @media(min-width:321px){@content}
+}
+
+@mixin desktop{
+  @media(min-width:769px){@content}
+}
+
+.downloader{
+  background: #EAF2FF;
+  &__imageContent{
+    background-image: url("../img/catia.png");
+    background-size: cover;
+
+    width: 80%;
+
+    min-width: 192px;
+    min-height: 192px;
+
+    max-width: 249px;
+    max-height: 249px;
+
+  }
+
 }
