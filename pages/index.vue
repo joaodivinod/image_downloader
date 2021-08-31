@@ -2,12 +2,13 @@
   <section class="container mx-auto downloader pt-10">
   <div class="bg-white mx-auto w-4/5 flex">
     <div class="downloader__imageContent relative h-80 w-80 bg-no-repeat bg-center mx-auto bg-green-600">
-
+      <img src="" alt="">
+      <p></p>
     </div>
   </div>
 
 
-<!--    <button class="button bg-green-600 text-white text-xl" @click="printThis">Baixar</button>-->
+    <button class="button bg-green-600 text-white text-xl" @click="printThis">Baixar</button>
 <!--    <button class="button bg-green-600 text-white text-xl" @click="baixarVarias">Baixar Varias Imagens</button>-->
 
 <!--    <div class="flex mt-10 w-4/12 mx-auto rounded-2xl h-60 justify-center items-center bg-blue-600" ref="printcontent">-->
