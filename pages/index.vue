@@ -98,7 +98,7 @@ export default {
         else{
           link.setAttribute("download", this.lancamento + this.valorInicial + ".png");
         }
-      
+
 
       link.setAttribute(
         "href",
