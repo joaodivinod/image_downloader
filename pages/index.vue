@@ -75,8 +75,9 @@ export default {
   methods: {
     async baixarVarias(){
       while (this.valorInicial <= this.valorFinal) {
-        await this.printThis()
         this.valorInicial++;
+        await this.printThis()
+
       }
     },
 
@@ -90,7 +91,15 @@ export default {
       const printCanvas = await html2canvas(el, options);
 
       const link = document.createElement("a");
-      link.setAttribute("download", this.lancamento + this.valorInicial + ".png");
+
+      if (this.downloadType){
+        link.setAttribute("download", this.lancamento + (this.valorInicial -1)  + ".png");
+      }
+        else{
+          link.setAttribute("download", this.lancamento + this.valorInicial + ".png");
+        }
+      
+
       link.setAttribute(
         "href",
         printCanvas
