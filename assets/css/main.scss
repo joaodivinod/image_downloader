@@ -43,7 +43,10 @@ input{
 
 .downloader{
   &--Dlcontainer{
-    width: 20rem;
+    width: 25rem;
+    &:first-child{
+      height: 25rem;
+  }
   }
 
   &__values{
@@ -55,16 +58,14 @@ input{
   }
 
   &__imageContent{
-    background-image: url("../img/ml-bg.png");
+    background-image: url("../img/Grupo5500.png");
     background-size: cover;
 
     width: 80%;
 
-    min-width: 192px;
-    min-height: 192px;
+    min-width: 300px;
+    min-height: 300px;
 
-    max-width: 249px;
-    max-height: 249px;
 
   }
 

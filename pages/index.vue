@@ -4,7 +4,7 @@
   <div class="bg-white mx-auto downloader--Dlcontainer h-80 flex rounded-2xl w-4/5 flex">
     <div class="downloader__imageContent relative h-80 w-80 bg-no-repeat bg-center m-auto bg-green-600 relative" ref="printcontent">
 <!--      <img class="absolute w-28 left-4 bottom-8" src="static/img/logo-master-love.png" alt="">-->
-      <p class="gotham-black text-white absolute right-4 bottom-7 text-3xl">{{ valorInicial }}</p>
+      <p class="gotham-black text-white absolute right-4 bottom-10 text-3xl">{{ valorInicial }}</p>
     </div>
 
 
