@@ -5,7 +5,8 @@
 
     <img class="absolute -right-5 -top-3 cursor-pointer" src="~/assets/img/icons/gears.svg" alt="">
 
-    <div :style="{ backgroundImage: `url(/_nuxt/assets/img/profile-pics/${this.grupCover})`}"
+    <div
+         style="background-image: url('/assets/img/profile-pics/profilepic1.png')"
          class="downloader__imageContent relative h-80 w-80 bg-no-repeat bg-center m-auto relative"
          ref="printcontent" >
 <!--      <img class="absolute w-28 left-4 bottom-8" src="static/img/logo-master-love.png" alt="">-->
