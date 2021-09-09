@@ -42,10 +42,11 @@ input{
 }
 
 .downloader{
+  max-width: 95%;
   &--Dlcontainer{
-    width: 25rem;
+    width: 20rem;
     &:first-child{
-      height: 25rem;
+      height: 20rem;
       @include phone(){
         height: 20rem;
       }
@@ -64,7 +65,7 @@ input{
   }
 
   &__imageContent{
-    //background-image: url("../img/profile-pics/profilepic1.png");
+    background-image: url("../img/profile-pics/profilepic1.png");
     background-size: cover;
 
 
