@@ -111,7 +111,7 @@ export default {
 
       grupCover:1,
 
-      showConfig:true
+      showConfig:false
 
     }
   },
