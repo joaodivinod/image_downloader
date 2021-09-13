@@ -4,9 +4,9 @@
   <div class="bg-white mx-auto downloader--Dlcontainer h-80 flex rounded-2xl w-4/5 flex relative">
     <img @click="showConfig = true" class="absolute -right-5 -top-3 cursor-pointer" src="~/assets/img/icons/gears.svg" alt="">
 
-    <div class="downloader__imageContent relative h-80 w-80 bg-no-repeat bg-center m-auto relative"
-         ref="printcontent" >
+    <div  class="downloader__imageContent relative h-80 w-80 bg-no-repeat bg-center m-auto relative" ref="printcontent" >
       <p class="gotham-black text-white absolute right-4 bottom-10 text-3xl">{{ valorInicial }}</p>
+      <img :src="require(`~/assets/img/profile-pics/profilepic${grupCover}.png`)"  alt=""/>
     </div>
 
 
@@ -73,9 +73,8 @@
 
           <div class="flex  flex-wrap">
             <div class="w-2/12 mx-5 mt-10" v-for="index in 8" :key="index">
-              <img class="" :src='`/_nuxt/assets/img/profile-pics/profilepic${index}.png`' alt="">
-<!--              <img class="" src='~/assets/img/profile-pics/profilepic1.png' alt="">-->
-              <button class="mt-7 downloader__buttonDownload text-white w-full rounded-xl h-12">Selecionar</button>
+              <img :src="require(`~/assets/img/profile-pics/profilepic${index}.png`)" alt="">
+              <button @click="grupCover = index" class="mt-7 downloader__buttonDownload text-white w-full rounded-xl h-12">Selecionar</button>
             </div>
           </div>
 
@@ -97,9 +96,10 @@ export default {
       lancamento:'MasterLove',
       downloadType:true,
 
-      grupCover:'profilepic1.png',
+      grupCover:1,
 
-      showConfig:true
+      showConfig:false
+
     }
   },
   methods: {
