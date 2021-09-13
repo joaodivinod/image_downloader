@@ -2,11 +2,10 @@
   <section class="container mx-auto downloader pt-10 flex flex-col">
 
   <div class="bg-white mx-auto downloader--Dlcontainer h-80 flex rounded-2xl w-4/5 flex relative">
-    
+    <img class="absolute -right-5 -top-3 cursor-pointer" src="~/assets/img/icons/gears.svg" alt="">
 
     <div class="downloader__imageContent relative h-80 w-80 bg-no-repeat bg-center m-auto relative"
          ref="printcontent" >
-<!--      <img class="absolute w-28 left-4 bottom-8" src="static/img/logo-master-love.png" alt="">-->
       <p class="gotham-black text-white absolute right-4 bottom-10 text-3xl">{{ valorInicial }}</p>
     </div>
 
@@ -17,8 +16,6 @@
 
       <h2 class="text-center" v-if="downloadType" >Baixar Varias</h2>
       <h2 class="text-center" v-else>Baixar Apenas Uma</h2>
-
-
 
       <label class="switch">
         <input type="checkbox" v-model="downloadType">
@@ -60,7 +57,12 @@
 
     </div>
 
+    <section class="imageSelection container mx-auto w-full min-h-screen">
+
+    </section>
+
   </section>
+
 </template>
 
 <script>
@@ -120,3 +122,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+  .imageSelection{
+    
+  }
+</style>
