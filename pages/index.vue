@@ -72,14 +72,22 @@
           <h1 class="md:text-2xl text-base text-gray-700 ">Escolha uma nova imagem de perfil</h1>
 
           <div class="flex  flex-wrap">
-            <div class="md:w-2/12 w-8/12 md:mx-5 mx-auto mt-10" v-for="index in 8" :key="index">
+            <div class="md:w-2/12 w-8/12 md:mx-5 mx-auto mt-10 relative" v-for="index in 8" :key="index">
               <img :src="require(`~/assets/img/profile-pics/profilepic${index}.png`)" alt="">
+<!--              <button @click="grupCover = index"-->
+<!--                      class="mt-7 downloader__buttonDownload text-white w-full rounded-xl h-12"-->
+<!--                      :class="index === grupCover ? 'downloader__buttonDownload&#45;&#45;select' : null ">-->
+<!--                      <span v-if="index === grupCover">Selecionada</span>-->
+<!--                      <span v-else>Selecionar</span>-->
+<!--              </button>-->
+
               <button @click="grupCover = index"
-                      class="mt-7 downloader__buttonDownload text-white w-full rounded-xl h-12"
+                      class="mt-7 downloader__buttonDownload text-white absolute -top-4 right-3 w-6 h-6 rounded-full"
                       :class="index === grupCover ? 'downloader__buttonDownload--select' : null ">
-                      <span v-if="index === grupCover">Selecionada</span>
-                      <span v-else>Selecionar</span>
+                <span v-if="index === grupCover">✓</span>
+                <span v-else class="">◯</span>
               </button>
+
             </div>
           </div>
 
@@ -103,7 +111,7 @@ export default {
 
       grupCover:1,
 
-      showConfig:false
+      showConfig:true
 
     }
   },
