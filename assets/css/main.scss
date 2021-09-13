@@ -62,6 +62,9 @@ input{
 
   &__buttonDownload{
     background: linear-gradient(281deg, rgba(65,54,241,1) 0%, rgba(134,67,255,1) 100%);
+    &--select{
+      background: linear-gradient(281deg, #00A006 0%, rgb(48, 217, 53) 100%);
+    }
   }
 
   &__imageContent{
